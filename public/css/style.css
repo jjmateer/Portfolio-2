@@ -128,9 +128,10 @@ footer {
 }
 #resumeBtn {
   margin: auto;
-  height: 10vh;
-  width: 5vw;
+  height: 9vh;
+  width: 4vw;
   box-shadow: 5px 10px 18px #888888;
+  border-radius:3.5px;
 }
 #linkedinBtn {
   background:white;
@@ -142,13 +143,17 @@ footer {
 }
 #GH-Logo {
   margin: auto;
-  height: 100%;
+  margin-top:-3px;
+  height: 105%;
   width: 100%;
 }
 #resIcon {
   margin: auto;
-  height: 100%;
-  width: 100%;
+  margin-top:-5px;
+  margin-left:-14px;
+  height: 110%;
+  width: 125%;
+  border-radius:3px;
 }
 #LI-Logo {
   margin: auto;
@@ -203,6 +208,38 @@ footer {
   #bar3 {
     margin-top: 4vh;
   }
+  #resourcesCont {
+    width: 70%;
+  }
+  #githubBtn {
+    height: 9vh;
+    width: 10vw;
+  }
+  #resumeBtn {
+    height: 9vh;
+    width: 8vw;
+    border-radius:5px;
+  }
+  #linkedinBtn {
+    background:white;
+    height: 9vh;
+    width: 9vw;
+    border-radius:10px;
+  }
+  #GH-Logo {
+    height: 103%;
+    width: 110%;
+    margin-left:-3px;
+  }
+  #resIcon {
+    width:140%;
+    margin-top:-5px;
+    margin-left:-15px;
+  }
+  #LI-Logo {
+    height: 101%;
+    width: 130%;
+  }
 }
 @media only screen and (max-width: 600px) {
   #logo {
@@ -214,5 +251,42 @@ footer {
     height: 4vh;
     right: 10;
     top: 25;
+  }
+  .sections {
+    width:100vw;
+  }
+  #resourcesCont {
+    width: 100%;
+  }
+  #githubBtn {
+    height: 11vh;
+    width: 20vw;
+    border-radius:50px;
+  }
+  #resumeBtn {
+    height: 11vh;
+    width: 15vw;
+    border-radius:5px;
+  }
+  #linkedinBtn {
+    background:white;
+    height: 11vh;
+    width: 18vw;
+    border-radius:10px;
+  }
+  #GH-Logo {
+    margin-top:-5px;
+    margin-left:-8px;
+    height: 105%;
+    width: 125%;
+  }
+  #resIcon {
+    width:140%;
+    margin-top:-3px;
+    margin-left:-12px;
+  }
+  #LI-Logo {
+    height: 105%;
+    width: 130%;
   }
 }
