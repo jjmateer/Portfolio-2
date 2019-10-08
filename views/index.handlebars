@@ -1,6 +1,6 @@
 <body>
     {{> header/header-block}}
-    <div class="parallaxCont" id="parallax1">
+    <div class="parallaxCont">
         <div class="section">
         </div>
     </div>
@@ -8,9 +8,18 @@
         <div class="section">
         </div>
     </div>
-    <div class="parallaxCont" id="parallax2"  id="parallax1">
+    <div class="parallaxCont">
         <div class="section">
+            <form id="contactForm">
+                <label for="name">Name</label>
+                <input class="formInputs" placeholder="Ex: John Johnson" id="name" />
+                <label for="name">Email</label>
+                <input class="formInputs" placeholder="Ex: name@email.com" id="email" />
+                <label for="name">Message</label>
+                <textarea class="formInputs" placeholder="Enter message here..." id="message"></textarea>
+                <btn id="submitBtn" type="submit">Submit</btn>
+            </form>
         </div>
     </div>
-        {{> footer/footer-block}}
+    {{> footer/footer-block}}
 </body>

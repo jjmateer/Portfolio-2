@@ -99,12 +99,35 @@ body {
   background: #aaa;
   border-radius: 1vh;
 }
-#contact {
-  height: 60vh;
-  width: 50vw;
-  margin: auto;
-  z-index: 10;
-  background: darkslategrey;
+#contactForm {
+  width:50%;
+  height:100%;
+  background-color:lightgray;
+  margin:auto;
+  color:black;
+  text-align:center;
+}
+.formInputs {
+  width:100%;
+  margin:auto;
+  border-radius:2px;  
+  border:1.5px solid gray;
+  margin-bottom:3vh;
+}
+#submitBtn {
+  display:block;
+  width:90%;
+  height:10%;
+  margin:auto;
+  background:gray;
+  cursor:pointer;
+  line-height:50px;
+  border-radius:10px;
+}
+#message {
+  min-height:20vh;
+  max-width:100%; 
+  min-width:100%;
 }
 footer {
   position: static;
@@ -119,12 +142,18 @@ footer {
   margin: auto;
   display: flex;
 }
+#githubBtn:hover, #resumeBtn:hover, #linkedinBtn:hover{
+  transition:0.5s;
+  box-shadow: 5px 10px 18px white;
+  transform: scale(1.2);
+}
 #githubBtn {
   margin: auto;
   height: 9vh;
   width: 5vw;
   border-radius:5vw;
   box-shadow: 5px 10px 18px #888888;
+  background:white;
 }
 #resumeBtn {
   margin: auto;
