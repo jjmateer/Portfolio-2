@@ -1,6 +1,7 @@
 html {
   padding: 0;
   margin: 0;
+  overflow: hidden;
 }
 body {
   padding: 0;
@@ -22,7 +23,7 @@ body {
   padding-left: 10vw;
   font-size: 3vw;
   line-height: 100%;
-  width: 80vw;
+  width: 55vw;
   margin: 0;
 }
 #navMenu {
@@ -31,6 +32,28 @@ body {
   position: relative;
   cursor: pointer;
   display: none;
+}
+#navMenuLG {
+  height:65%;
+  margin-top:1vh;
+  width:25vw;
+  display:flex;
+}
+.LGnavBtn {
+  background:gray;
+  box-shadow: 5px 5px 10px black;
+  height:100%;
+  width:32%;
+  text-align: center;
+  font-size:1.5vw;
+  margin:auto;
+  line-height:6.5vh;
+  cursor:pointer;
+  border-radius:2px;
+}
+.LGnavBtn:hover {
+  transition:0.5s;
+  box-shadow: 5px 5px 10px gray;
 }
 .menuBar {
   width: 100%;
@@ -47,9 +70,6 @@ body {
 }
 #bar3 {
   margin-top: 2.5vw;
-}
-html {
-  overflow: hidden;
 }
 body {
   margin: 0;
@@ -91,6 +111,8 @@ body {
   background: lightgray;
   z-index: 2;
   position: relative;
+  font-size:100px;
+  text-align:center
 }
 .section {
   margin: auto;
@@ -99,8 +121,16 @@ body {
   background: #aaa;
   border-radius: 1vh;
 }
+#projectsCont {
+  height:60vh;
+  width:100vw;
+  background:lightgray;
+}
+#contactCont {
+  width:50vw;
+}
 #contactForm {
-  width:50%;
+  width:95%;
   height:100%;
   background-color:lightgray;
   margin:auto;
@@ -113,6 +143,7 @@ body {
   border-radius:2px;  
   border:1.5px solid gray;
   margin-bottom:3vh;
+  resize:none;  
 }
 #submitBtn {
   display:block;
@@ -209,6 +240,7 @@ footer {
 }
 @media only screen and (max-width: 1025px) {
   #logo {
+    width:80%;
     font-size: 50px;
     margin-top: 3vh;
   }
@@ -222,6 +254,9 @@ footer {
   #navMenu:active {
     transition: 1s;
     opacity: 0;
+  }
+  #navMenuLG{
+    display:none;
   }
   .menuBar {
     width: 100%;
