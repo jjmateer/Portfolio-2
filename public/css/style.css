@@ -14,15 +14,16 @@ body {
   height: 10vh;
   width: 100vw;
   position: fixed;
-  box-shadow: 0.1vw 0.1vw 2vw #888888;
+  box-shadow: 0.1vw 0.1vw 2vw black;
   background-color: lightgrey;
   display: flex;
   z-index: 6;
+  font-family: 'Kaushan Script', cursive;
 }
 #logo {
   padding-left: 10vw;
   font-size: 3vw;
-  line-height: 100%;
+  line-height: 10vh;
   width: 55vw;
   margin: 0;
 }
@@ -34,25 +35,25 @@ body {
   display: none;
 }
 #navMenuLG {
-  height:65%;
-  margin-top:1vh;
-  width:25vw;
-  display:flex;
+  height: 65%;
+  margin-top: 1vh;
+  width: 25vw;
+  display: flex;
 }
 .LGnavBtn {
-  background:gray;
+  background: gray;
   box-shadow: 5px 5px 10px black;
-  height:100%;
-  width:32%;
+  height: 100%;
+  width: 32%;
   text-align: center;
-  font-size:1.5vw;
-  margin:auto;
-  line-height:6.5vh;
-  cursor:pointer;
-  border-radius:2px;
+  font-size: 1.5vw;
+  margin: auto;
+  line-height: 6.5vh;
+  cursor: pointer;
+  border-radius: 2px;
 }
 .LGnavBtn:hover {
-  transition:0.5s;
+  transition: 0.5s;
   box-shadow: 5px 5px 10px gray;
 }
 .menuBar {
@@ -103,6 +104,10 @@ body {
   z-index: -1;
   transform: translateZ(-1px) scale(2);
 }
+#contactParallax:before {
+  background-image: url("../images/phonebooth.jpg");
+  rotate: 90deg;
+}
 .regularCont {
   padding-top: 20vh;
   width: 100vw;
@@ -111,8 +116,8 @@ body {
   background: lightgray;
   z-index: 2;
   position: relative;
-  font-size:100px;
-  text-align:center
+  font-size: 100px;
+  text-align: center;
 }
 .section {
   margin: auto;
@@ -120,45 +125,57 @@ body {
   width: 80vw;
   background: #aaa;
   border-radius: 1vh;
+  font-family: 'Kaushan Script', cursive;
+}
+#contactHeader{
+    text-shadow: 5px 5px 10px black;
+    font-size: 75px;
 }
 #projectsCont {
-  height:60vh;
-  width:100vw;
-  background:lightgray;
+  height: 60vh;
+  width: 100vw;
+  background: lightgray;
 }
 #contactCont {
-  width:50vw;
+  width: 50vw;
+  background:transparent;
 }
 #contactForm {
-  width:95%;
-  height:100%;
-  background-color:lightgray;
-  margin:auto;
-  color:black;
-  text-align:center;
+  width: 95%;
+  height: 100%;
+  /* background-color: lightgray; */
+  margin: auto;
+  color:white;
+  text-align: center;
+}
+label[for=name]{
+height:10vh;
+font-size:50px;
 }
 .formInputs {
-  width:100%;
-  margin:auto;
-  border-radius:2px;  
-  border:1.5px solid gray;
-  margin-bottom:3vh;
-  resize:none;  
+  width: 100%;
+  margin: auto;
+  border-radius: 5px;
+  border: 1.5px solid gray;
+  margin-bottom: 3vh;
+  /* box-shadow: 0.1vw 0.1vw 2vw black; */
+  resize: none;
 }
 #submitBtn {
-  display:block;
-  width:90%;
-  height:10%;
-  margin:auto;
-  background:gray;
-  cursor:pointer;
-  line-height:50px;
-  border-radius:10px;
+  display: block;
+  width: 90%;
+  height: 10%;
+  margin: auto;
+  background: gray;
+  cursor: pointer;
+  line-height: 50px;
+  box-shadow: 0.1vw 0.1vw 2vw black;
+  border-radius: 10px;
 }
 #message {
-  min-height:20vh;
-  max-width:100%; 
-  min-width:100%;
+  min-height: 20vh;
+  max-width: 100%;
+  min-width: 100%;
 }
 footer {
   position: static;
@@ -173,8 +190,10 @@ footer {
   margin: auto;
   display: flex;
 }
-#githubBtn:hover, #resumeBtn:hover, #linkedinBtn:hover{
-  transition:0.5s;
+#githubBtn:hover,
+#resumeBtn:hover,
+#linkedinBtn:hover {
+  transition: 0.5s;
   box-shadow: 5px 10px 18px white;
   transform: scale(1.2);
 }
@@ -182,38 +201,38 @@ footer {
   margin: auto;
   height: 9vh;
   width: 5vw;
-  border-radius:5vw;
+  border-radius: 5vw;
   box-shadow: 5px 10px 18px #888888;
-  background:white;
+  background: white;
 }
 #resumeBtn {
   margin: auto;
   height: 9vh;
   width: 4vw;
   box-shadow: 5px 10px 18px #888888;
-  border-radius:3.5px;
+  border-radius: 3.5px;
 }
 #linkedinBtn {
-  background:white;
+  background: white;
   margin: auto;
   height: 8vh;
   width: 4vw;
-  border-radius:10px;
+  border-radius: 10px;
   box-shadow: 5px 10px 18px #888888;
 }
 #GH-Logo {
   margin: auto;
-  margin-top:-3px;
+  margin-top: -3px;
   height: 105%;
   width: 100%;
 }
 #resIcon {
   margin: auto;
-  margin-top:-5px;
-  margin-left:-14px;
+  margin-top: -5px;
+  margin-left: -14px;
   height: 110%;
   width: 125%;
-  border-radius:3px;
+  border-radius: 3px;
 }
 #LI-Logo {
   margin: auto;
@@ -226,7 +245,7 @@ footer {
   margin: auto;
   text-align: center;
   color: black;
-  font-size: 30px;  
+  font-size: 30px;
 }
 #topPointer {
   display: block;
@@ -234,13 +253,13 @@ footer {
   height: 60%;
   width: 50%;
 }
-#topPointerBtn{
-  z-index:6;
+#topPointerBtn {
+  z-index: 6;
   cursor: pointer;
 }
 @media only screen and (max-width: 1025px) {
   #logo {
-    width:80%;
+    width: 80%;
     font-size: 50px;
     margin-top: 3vh;
   }
@@ -255,8 +274,8 @@ footer {
     transition: 1s;
     opacity: 0;
   }
-  #navMenuLG{
-    display:none;
+  #navMenuLG {
+    display: none;
   }
   .menuBar {
     width: 100%;
@@ -282,23 +301,23 @@ footer {
   #resumeBtn {
     height: 9vh;
     width: 8vw;
-    border-radius:5px;
+    border-radius: 5px;
   }
   #linkedinBtn {
-    background:white;
+    background: white;
     height: 9vh;
     width: 9vw;
-    border-radius:10px;
+    border-radius: 10px;
   }
   #GH-Logo {
     height: 103%;
     width: 110%;
-    margin-left:-3px;
+    margin-left: -3px;
   }
   #resIcon {
-    width:140%;
-    margin-top:-5px;
-    margin-left:-15px;
+    width: 140%;
+    margin-top: -5px;
+    margin-left: -15px;
   }
   #LI-Logo {
     height: 101%;
@@ -317,7 +336,7 @@ footer {
     top: 25;
   }
   .sections {
-    width:100vw;
+    width: 100vw;
   }
   #resourcesCont {
     width: 100%;
@@ -325,29 +344,29 @@ footer {
   #githubBtn {
     height: 11vh;
     width: 20vw;
-    border-radius:50px;
+    border-radius: 50px;
   }
   #resumeBtn {
     height: 11vh;
     width: 15vw;
-    border-radius:5px;
+    border-radius: 5px;
   }
   #linkedinBtn {
-    background:white;
+    background: white;
     height: 11vh;
     width: 18vw;
-    border-radius:10px;
+    border-radius: 10px;
   }
   #GH-Logo {
-    margin-top:-5px;
-    margin-left:-8px;
+    margin-top: -5px;
+    margin-left: -8px;
     height: 105%;
     width: 125%;
   }
   #resIcon {
-    width:140%;
-    margin-top:-3px;
-    margin-left:-12px;
+    width: 140%;
+    margin-top: -3px;
+    margin-left: -12px;
   }
   #LI-Logo {
     height: 105%;
