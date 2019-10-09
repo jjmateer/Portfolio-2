@@ -18,7 +18,7 @@ body {
   background-color: lightgrey;
   display: flex;
   z-index: 6;
-  font-family: 'Kaushan Script', cursive;
+  font-family: "Kaushan Script", cursive;
 }
 #logo {
   padding-left: 10vw;
@@ -111,13 +111,14 @@ body {
 .regularCont {
   padding-top: 20vh;
   width: 100vw;
-  height: 80vh;
+  height: 82vh;
   margin-top: 40vh;
   background: lightgray;
   z-index: 2;
   position: relative;
   font-size: 100px;
   text-align: center;
+  font-family: "Kaushan Script", cursive;
 }
 .section {
   margin: auto;
@@ -125,11 +126,30 @@ body {
   width: 80vw;
   background: #aaa;
   border-radius: 1vh;
-  font-family: 'Kaushan Script', cursive;
+  font-family: "Kaushan Script", cursive;
 }
-#contactHeader{
-    text-shadow: 5px 5px 10px black;
-    font-size: 75px;
+p {
+  font-family: 'Tinos', serif;
+  width:100%;
+  text-align: center;
+  text-shadow: 1px 1px 5px black;}
+#aboutHeader {
+  text-shadow: 5px 5px 10px black;
+  font-size: 75px;
+  width: auto;
+  text-align: center;
+}
+#contactHeader {
+  text-shadow: 5px 5px 10px black;
+  font-size: 75px;
+  width: auto;
+  text-align: center;
+}
+#projectsHeader {
+  text-shadow: 5px 5px 10px black;
+  font-size: 75px;
+  width: auto;
+  text-align: center;
 }
 #projectsCont {
   height: 60vh;
@@ -137,20 +157,20 @@ body {
   background: lightgray;
 }
 #contactCont {
-  width: 50vw;
-  background:transparent;
+  width: 90vw;
+  background: transparent;
 }
 #contactForm {
   width: 95%;
   height: 100%;
   /* background-color: lightgray; */
   margin: auto;
-  color:white;
+  color: white;
   text-align: center;
 }
-label[for=name]{
-height:10vh;
-font-size:50px;
+label[for="name"] {
+  height: 10vh;
+  font-size: 50px;
 }
 .formInputs {
   width: 100%;
@@ -158,8 +178,9 @@ font-size:50px;
   border-radius: 5px;
   border: 1.5px solid gray;
   margin-bottom: 3vh;
-  /* box-shadow: 0.1vw 0.1vw 2vw black; */
+  box-shadow: 0.1vw 0.1vw 2vw black;
   resize: none;
+  outline: transparent;
 }
 #submitBtn {
   display: block;
@@ -171,6 +192,10 @@ font-size:50px;
   line-height: 50px;
   box-shadow: 0.1vw 0.1vw 2vw black;
   border-radius: 10px;
+}
+#submitBtn:hover {
+  transition: 0.5s;
+  text-shadow: 0.1vw 0.1vw 2vw white;
 }
 #message {
   min-height: 20vh;
@@ -257,11 +282,16 @@ footer {
   z-index: 6;
   cursor: pointer;
 }
+#topPointerBtn:hover {
+  text-shadow: 0.1vw 0.1vw 0vw white;
+  font-size: 32px;
+}
 @media only screen and (max-width: 1025px) {
   #logo {
     width: 80%;
     font-size: 50px;
     margin-top: 3vh;
+    line-height: 5vh;
   }
   #navMenu {
     width: 7vw;
