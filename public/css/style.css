@@ -192,6 +192,9 @@ label[for="name"] {
   line-height: 50px;
   box-shadow: 0.1vw 0.1vw 2vw black;
   border-radius: 10px;
+  font-family: "Kaushan Script", cursive;
+  font-size:40px;
+  color:white;
 }
 #submitBtn:hover {
   transition: 0.5s;
