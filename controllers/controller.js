@@ -2,7 +2,7 @@ const nodemailer = require('nodemailer');
 exports.home = function (req, res) {
     res.render("index")
 }
-exports.send = async function (req, res, err) {
+exports.send = async function (req, res) {
     var output = `
     <h1>New message from portfolio.</h1>
     <ul>
