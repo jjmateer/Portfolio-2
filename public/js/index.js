@@ -6,7 +6,7 @@ $("#topPointerBtn").on('click', function () {
 });
 $("#projectScroll").on('click', function () {
     $('body').animate({
-        scrollTop: $("#projectsHeader").offset().top-250
+        scrollTop: $(".regularCont").offset().top
     },
         1000);
 });
@@ -21,4 +21,19 @@ $("#resourceScroll").on('click', function () {
         scrollTop: $("#resourcesCont").offset().top
     },
         2000);
+});
+$("#contactForm").on("submit", function () {
+    event.preventDefault();
+    $.post("/send", {
+        type: "POST",
+        name: $("#name")
+            .val()
+            .trim(),
+        email: $("#email")
+            .val()
+            .trim(),
+        message: $("#message")
+            .val()
+            .trim()
+    });
 });

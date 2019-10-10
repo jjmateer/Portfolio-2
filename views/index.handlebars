@@ -14,15 +14,16 @@
     </div>
     <div class="parallaxCont" id="contactParallax">
         <div class="section" id="contactCont">
-            <form id="contactForm">
+            <form id="contactForm" method="POST" action="send">
                 <h1 id="contactHeader">Contact</h1>
+                {{msg}}
                 <label for="name">Name</label>
                 <input class="formInputs" placeholder="Ex: John Johnson" id="name" />
                 <label for="name">Email</label>
                 <input class="formInputs" placeholder="Ex: name@email.com" id="email" />
                 <label for="name">Message</label>
                 <textarea class="formInputs" placeholder="Enter message here..." id="message"></textarea>
-                <btn id="submitBtn" type="submit">Submit</btn>
+                <button id="submitBtn" type="submit">Submit</button>
             </form>
         </div>
     </div>
