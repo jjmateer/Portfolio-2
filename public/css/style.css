@@ -195,6 +195,7 @@ label[for="name"] {
   font-family: "Kaushan Script", cursive;
   font-size:40px;
   color:white;
+  outline:none;
 }
 #submitBtn:hover {
   transition: 0.5s;

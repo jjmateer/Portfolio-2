@@ -35,5 +35,9 @@ $("#contactForm").on("submit", function () {
         message: $("#message")
             .val()
             .trim()
+    }).then(function () {
+        $("#name").val(' ')
+        $("#email").val(' ')
+        $("#message").val(' ')
     });
 });
