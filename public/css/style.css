@@ -122,7 +122,7 @@ body {
 }
 .section {
   margin: auto;
-  height: 50vh;
+  height: 75vh;
   width: 80vw;
   background: #aaa;
   border-radius: 1vh;
@@ -130,8 +130,10 @@ body {
 }
 p {
   font-family: 'Tinos', serif;
-  width:100%;
-  text-align: center;
+  width:60%;
+  margin:auto;
+  font-size:1.5vw;
+  text-align: justify;
   text-shadow: 1px 1px 5px black;
 }
 #aboutHeader, #contactHeader, #projectsHeader {
@@ -142,7 +144,7 @@ p {
   margin:0;
 }
 #projectsCont {
-  height: 60vh;
+  height: 100%;
   width: 100vw;
   background: lightgray;
 }
@@ -172,7 +174,7 @@ label[for="name"] {
   box-shadow: 0.1vw 0.1vw 2vw black;
   resize: none;
   outline: transparent;
-  font-size:3vh;
+  font-size:2vh;
 }
 #submitBtn {
   display: block;
@@ -359,6 +361,10 @@ footer {
   #aboutHeader, #contactHeader, #projectsHeader {
     font-size: 9vw;
   }
+  p{
+    font-size:3vw;
+    width:90%;
+  }
 }
 @media only screen and (max-width: 600px) {
   #logo {
@@ -418,5 +424,8 @@ footer {
   label[for="name"] {
     height: 10vh;
     font-size: 10vw;
+  }
+  p{
+    font-size:5.5vw;
   }
 }
