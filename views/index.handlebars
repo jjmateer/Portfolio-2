@@ -5,22 +5,38 @@
             <h1 id="aboutHeader">About Me</h1>
             <p>Hello! My name is John, but I go by JJ. I am a fast learning web developer based in Sacramento, CA.
                 I enjoy using new technology, cooking, and tinkering with computers & cars. Currently, I'm attending
-                a full-stack coding bootcamp at UC Davis and creating lots of great web applications with a variety of widely
-                used web developement languages. Check out some of my projects below and do not hesitate to get in contact if you would
+                a full-stack coding bootcamp at UC Davis and creating lots of great web applications with a variety of
+                widely
+                used web developement languages. Check out some of my projects below and do not hesitate to get in
+                contact if you would
                 like to work with me, I am always looking to expand my network!
             </p>
+            <img id="personalPhoto" src="images/linkedinpic.jpg">
         </div>
     </div>
+    <img src="images/resumeicon.png" style="height:50px;" alt="">
     <div class="regularCont">
         <h1 id="projectsHeader">Projects</h1>
         <div class="section" id="projectsCont">
+            <div class="glide">
+                <div class="glide__track" data-glide-el="track">
+                    <ul class="glide__slides">
+                        <li class="glide__slide"><img src="images/resumeicon.png" style="height:50px;" alt=""></li>
+                        <li class="glide__slide">1</li>
+                        <li class="glide__slide">2</li>
+                    </ul>
+                </div>
+                <div class="glide__arrows" data-glide-el="controls">
+                    <button class="glide__arrow glide__arrow--left" data-glide-dir="<">prev</button>
+                    <button class="glide__arrow glide__arrow--right" data-glide-dir=">">next</button>
+                </div>
+            </div>
         </div>
     </div>
     <div class="parallaxCont" id="contactParallax">
         <div class="section" id="contactCont">
             <form id="contactForm" method="POST" action="send">
                 <h1 id="contactHeader">Contact</h1>
-                {{msg}}
                 <label for="name">Name</label>
                 <input class="formInputs" placeholder="Ex: John Johnson" id="name" />
                 <label for="name">Email</label>

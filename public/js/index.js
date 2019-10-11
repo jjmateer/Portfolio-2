@@ -2,7 +2,7 @@ $("#topPointerBtn").on('click', function () {
     $('body').animate({
         scrollTop: $("#topBar").offset().top
     },
-        1500);
+        1000);
 });
 $("#projectScroll").on('click', function () {
     $('body').animate({
@@ -14,13 +14,13 @@ $("#contactScroll").on('click', function () {
     $('body').animate({
         scrollTop: $("#contactCont").offset().top
     },
-        1500);
+        1000);
 });
 $("#resourceScroll").on('click', function () {
     $('body').animate({
         scrollTop: $("#resourcesCont").offset().top
     },
-        2000);
+        1000);
 });
 $("#contactForm").on("submit", function () {
     event.preventDefault();
