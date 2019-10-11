@@ -41,3 +41,17 @@ $("#contactForm").on("submit", function () {
         $("#message").val(' ')
     });
 });
+const glideConfig = {
+    type: "carousel",
+    perView: 3,
+    breakpoints: {
+        1025: {
+            perView: 2
+        },
+        600: {
+            perView: 1
+        }
+    }
+};
+new Glide('.glide', glideConfig).mount()
+
