@@ -6,7 +6,7 @@ $("#topPointerBtn").on('click', function () {
 });
 $("#projectScroll" ).on('click', function () {
     $('body').animate({
-        scrollTop: $(".regularCont").offset().top
+        scrollTop: $("#projectsHeader").offset().top
     },
         1000);
 });
