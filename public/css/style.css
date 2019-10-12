@@ -169,7 +169,7 @@ p {
   border-radius:5px;
   text-shadow: 5px 5px 10px black;
   background-position: center;
-  background-size:contain;
+  background-size:cover;
   background-repeat:no-repeat;
 }
 #glideControls {
@@ -442,6 +442,18 @@ footer {
     font-size: 3vw;
     width: 90%;
   }
+  .projectDesc {
+    font-size:3vw;
+    height:30vh;
+    margin-top:auto;
+  }
+  .glideCard {
+    height:60vh;
+  }
+  .projectBtns {
+    font-size:3.5vw;
+    margin-top:10%;
+  }
 }
 @media only screen and (max-width: 600px) {
   #logo {
@@ -489,7 +501,7 @@ footer {
   }
   #LI-Logo {
     height: 105%;
-    width: 130%;
+    width: 135%;
   }
   #submitBtn {
     font-size: 7vw;
@@ -506,5 +518,20 @@ footer {
   }
   p {
     font-size: 5.5vw;
+  }
+  #glideCardH {
+    font-size:5vh;
+  }
+  .projectDesc {
+    font-size:6vw;
+    height:30vh;
+    margin-top:auto;
+  }
+  .glideCard {
+    height:55vh;
+  }
+  .projectBtns {
+    margin-top:10%;
+    font-size:5vw;
   }
 }
