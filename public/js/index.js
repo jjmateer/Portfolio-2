@@ -4,7 +4,7 @@ $("#topPointerBtn").on('click', function () {
     },
         1000);
 });
-$("#projectScroll").on('click', function () {
+$("#projectScroll" ).on('click', function () {
     $('body').animate({
         scrollTop: $(".regularCont").offset().top
     },
@@ -21,6 +21,27 @@ $("#resourceScroll").on('click', function () {
         scrollTop: $("#resourcesCont").offset().top
     },
         1000);
+});
+$("#projectScrollSM" ).on('click', function () {
+    $('body').animate({
+        scrollTop: $(".regularCont").offset().top
+    },
+        1000);
+            document.getElementById("navMenuSM").style.display = "none";
+});
+$("#contactScrollSM").on('click', function () {
+    $('body').animate({
+        scrollTop: $("#contactCont").offset().top
+    },
+        1000);
+            document.getElementById("navMenuSM").style.display = "none";
+});
+$("#resourceScrollSM").on('click', function () {
+    $('body').animate({
+        scrollTop: $("#resourcesCont").offset().top
+    },
+        1000);
+            document.getElementById("navMenuSM").style.display = "none";
 });
 $("#contactForm").on("submit", function () {
     event.preventDefault();
@@ -54,4 +75,11 @@ const glideConfig = {
     }
 };
 new Glide('.glide', glideConfig).mount()
+
+$("#navMenu").on("click", function() {
+    document.getElementById("navMenuSM").style.display = "block";
+})
+function closeNav() {
+    document.getElementById("navMenuSM").style.display = "none";
+}
 
