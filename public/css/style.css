@@ -147,9 +147,7 @@ p {
   width: 300px;
   margin-left: 35vw;
 }
-#aboutHeader,
-#contactHeader,
-#projectsHeader {
+h1 {
   text-shadow: 5px 5px 10px black;
   font-size: 5vw;
   width: auto;
@@ -189,15 +187,15 @@ p {
   font-size: 20px;
   width: 100%;
   height: auto;
-  margin-top:20%;
+  /* margin-top:20%; */
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   background-color: dimgray;
 }
 
 .projectBtns {
   width: 100%;
-  height: 10%;
-  font-size: 30px;
+  height: 12.5%;
+  font-size: 25px;
   display: flex;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   background-color: dimgray;
@@ -284,6 +282,7 @@ footer {
   height: 30vh;
   width: 100vw;
   background-color: lightgray;
+  font-family: "Kaushan Script", cursive;
 }
 #resourcesCont {
   height: 50%;
@@ -458,9 +457,7 @@ footer {
     height: 10vh;
     font-size: 7vw;
   }
-  #aboutHeader,
-  #contactHeader,
-  #projectsHeader {
+h1 {
     font-size: 9vw;
   }
   p {
@@ -469,14 +466,12 @@ footer {
   }
   .projectDesc {
     font-size:3vw;
-    height:30vh;
-    margin-top:auto;
   }
   .glideCard {
     height:60vh;
   }
   .projectBtns {
-    font-size:3.5vw;
+    font-size:3vw;
     margin-top:10%;
   }
 }
@@ -532,9 +527,7 @@ footer {
     font-size: 7vw;
     line-height: 100%;
   }
-  #aboutHeader,
-  #contactHeader,
-  #projectsHeader {
+  h1 {
     font-size: 12vw;
   }
   label[for="name"] {
@@ -550,7 +543,7 @@ footer {
   .projectDesc {
     font-size:6vw;
     height:30vh;
-    margin-top:auto;
+    margin-top:20vh;
   }
   .glideCard {
     height:55vh;
