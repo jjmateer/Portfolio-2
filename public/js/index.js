@@ -66,10 +66,4 @@ const glideConfig = {
     }
 };
 new Glide('.glide', glideConfig).mount()
-$("#navMenu").on("click", function () {
-    document.getElementById("navMenuSM").style.display = "block";
-})
-function closeNav() {
-    document.getElementById("navMenuSM").style.display = "none";
-}
-
+AOS.init();

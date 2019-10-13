@@ -1,172 +1,93 @@
-html {
-  padding: 0;
+* {
   margin: 0;
-  overflow: hidden;
-}
-body {
   padding: 0;
-  margin: 0;
-  background-color: lightgray;
-}
-#topBar {
-  height: 10vh;
-  width: 100vw;
-  position: fixed;
-  box-shadow: 0.1vw 0.1vw 2vw black;
-  background-color: lightgrey;
-  display: flex;
-  z-index: 6;
   font-family: "Kaushan Script", cursive;
 }
-#logo {
-  padding-left: 10vw;
-  font-size: 3vw;
-  line-height: 10vh;
-  width: 55vw;
-  margin: 0;
-  text-align: left;
-}
-#navMenu {
-  width: 3vw;
-  height: 6vh;
-  position: relative;
-  cursor: pointer;
-  display: none;
-}
-#navMenuLG {
-  height: 65%;
-  margin-top: 1vh;
-  width: 25vw;
-  display: flex;
-}
-.LGnavBtn {
-  background: gray;
-  box-shadow: 5px 5px 10px black;
-  height: 100%;
-  width: 32%;
-  text-align: center;
-  font-size: 1.5vw;
-  margin: auto;
-  line-height: 6.5vh;
-  cursor: pointer;
-  border-radius: 2px;
-}
-.LGnavBtn:hover {
-  transition: 0.5s;
-  box-shadow: 5px 5px 10px gray;
-  text-shadow: 2px 2px 10px white;
-}
-.menuBar {
+#navBar {
   width: 100%;
-  height: 10%;
-  background: black;
-  position: absolute;
-  border-radius: 10px;
+  position: fixed;
+  height: 10vh;
+  /* background: lightsteelblue; */
+  top:0;
+  display:flex;
+  z-index:10;
 }
-#bar1 {
-  margin-top: 0.5vw;
+#logo{
+  width:70vw;
+  height:10vh;
+  padding-left:10vw;
+  line-height:10vh;
 }
-#bar2 {
-  margin-top: 1.5vw;
+#navMenu{
+  margin-right:5vw;
+  width:20vw;
+  height:10vh;
+  display:flex;
+
 }
-#bar3 {
-  margin-top: 2.5vw;
-}
-body {
-  margin: 0;
-  font-size: 26px;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  color: #ffffff;
-  height: 100vh;
-  perspective: 1px;
-  transform-style: preserve-3d;
-  overflow-x: hidden;
-  overflow-y: auto;
-}
-.parallaxCont {
-  width: 100vw;
-  height: 60vh;
-  padding-top: 20vh;
-  box-sizing: border-box;
-  transform-style: preserve-3d;
-}
-.parallaxCont:before {
-  content: "";
-  width: 100vw;
-  height: 100vh;
-  background-image: url("../images/abstract2.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  top: 0;
-  left: 0;
-  position: absolute;
-  z-index: -1;
-  transform: translateZ(-1px) scale(2);
-}
-#contactParallax:before {
-  margin-top: 20vh;
-  background-image: url("../images/phonebooth.jpg");
-}
-.regularCont {
-  padding-top: 20vh;
-  width: 100vw;
-  height: 82vh;
-  margin-top: 40vh;
-  /* background: lightgray; */
-  z-index: 2;
-  position: relative;
-  font-size: 100px;
+.navBtn{
+  width:32.5%;
+  height:5vh;
+  background-color:lightgray;
   text-align: center;
-  font-family: "Kaushan Script", cursive;
+  line-height: 5vh;
+  margin:auto;
+  cursor:pointer;
 }
 .section {
-  margin: auto;
-  height: auto;
-  width: 100vw;
-  background: gray;
-  font-family: "Kaushan Script", cursive;
-}
-p {
-  font-family: "Tinos", serif;
-  width: 60%;
-  margin: auto;
-  font-size: 1.5vw;
-  text-align: justify;
-  text-shadow: 1px 1px 5px black;
-}
-#personalPhoto {
-  border-radius: 50%;
-  height: 300px;
-  width: 300px;
-  margin-left: 35vw;
-}
-h1 {
-  text-shadow: 5px 5px 10px black;
-  font-size: 5vw;
-  width: auto;
-  text-align: center;
-  margin: 0;
-}
-#projectsCont {
-  height: 100vh;
-  width: 100vw;
-  background: lightgray;
-  align-items: center;
-  justify-content: center;
-}
-.glideCard {
-  background: gray;
   width: 100%;
-  height: 50vh;
-  border-radius: 5px;
-  text-shadow: 5px 5px 10px black;
+  height: 90vh;
+  background-color: lightgray;
+  margin-top: 10vh;
+  padding: auto;
+}
+.mainH{
+  font-size:75px;
+  text-align:center;
+  width:100%;
+  height:5vh;
+  margin-bottom:10vh;
+}
+#intro{
+  width:80%;
+  height:60%;
+  padding:5px;
+  font-size:5vh;
+  margin:auto;
+  background-color:gray;
+}
+.glide{
+  width:100%;
+  height:100%;
+  color:white;
+}
+.glideCard{
+  height:50vh;
   background-position: center;
   background-size: cover;
-  background-repeat: no-repeat;
+  background-blend-mode: darken;
+  background-repeat:no-repeat;
 }
-#glideControls {
-  background: gray;
+.glideCardH{
+  display:block;
+  font-size:5vh;
+  width:100%;
+  text-align:center;
+}
+.projectBtns{
+  margin-top:5vh;
+  display:flex;
+  width:100%;
+}
+.pbtn{
+  width:33%;
+  height:4vh;
+  background-color:gray;
+  margin:auto;
+  line-height:100%;
+  text-align:center;
+  font-size:200%;
+  text-decoration: none;
 }
 #TSNCard {
   background-image: url(../images/TSN.png);
@@ -177,356 +98,13 @@ h1 {
 #GSCard {
   background-image: url(../images/GS.png);
 }
-.projectDesc {
-  font-size: 30px;
-  width: 100%;
-  height: auto;
-  margin-top: 20%;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  background-color: dimgray;
-  display: none;
-}
-
-.projectBtns {
-  width: 100%;
-  height: 10%;
-  display: flex;
-  font-size: 25px;
-}
-.pbtn {
-  width: 10vw;
-  height: 5vh;
-  line-height: 5vh;
-  margin: auto;
-  display: block;
-  border-radius: 2px;
-  text-decoration: none;
-  color: white;
-  background: gray;
-  box-shadow: 5px 5px 10px black;
-}
-.pbtn:hover {
-  transition: 0.5s;
-  cursor: pointer;
-  box-shadow: 5px 5px 10px gray;
-}
-#glideCardH {
-  font-size: 40px;
-  /* background:gray; */
-}
-#contactCont {
-  width: 90vw;
-  background: transparent;
-}
-#contactForm {
-  width: 95%;
-  height: 100%;
-  /* background-color: lightgray; */
-  margin: auto;
-  color: white;
-  text-align: center;
-}
-label[for="name"] {
-  height: 10vh;
-  font-size: 3vw;
-}
-.formInputs {
-  width: 100%;
-  height: 5vh;
-  margin: auto;
-  border-radius: 5px;
-  border: 1.5px solid gray;
-  margin-bottom: 3vh;
-  box-shadow: 0.1vw 0.1vw 2vw black;
-  resize: none;
-  outline: transparent;
-  font-size: 2vh;
-}
-#submitBtn {
-  display: block;
-  width: 50%;
-  height: 15%;
-  margin: auto;
-  background: gray;
-  cursor: pointer;
-  line-height: 50px;
-  box-shadow: 0.1vw 0.1vw 2vw black;
-  border-radius: 5px;
-  font-family: "Kaushan Script", cursive;
-  font-size: 40px;
-  color: white;
-  outline: none;
-}
-#submitBtn:hover {
-  transition: 0.5s;
-  text-shadow: 0.1vw 0.1vw 2vw white;
-  border: 2px solid white;
-}
-#message {
-  min-height: 20vh;
-  max-width: 100%;
-  min-width: 100%;
-}
-footer {
-  position: static;
-  margin-top: 85vh;
-  height: 30vh;
-  width: 100vw;
-  background-color: lightgray;
-  font-family: "Kaushan Script", cursive;
-}
-#resourcesCont {
-  height: 50%;
-  width: 50%;
-  margin: auto;
-  display: flex;
-}
-#githubBtn:hover,
-#linkedinBtn:hover {
-  transition: 0.5s;
-  box-shadow: 5px 10px 18px white;
-  transform: scale(1.2);
-}
-#resIcon:hover {
-  transition: 0.5s;
-  transform: scale(1.2);
-}
-#githubBtn {
-  margin: auto;
-  height: 100px;
-  width: 100px;
-  border-radius: 50%;
-  box-shadow: 5px 10px 18px #888888;
-  background: white;
-}
-#resumeBtn {
-  margin: auto;
-  height: 100px;
-  width: 100px;
-  border-radius: 3.5px;
-}
-#linkedinBtn {
-  background: white;
-  margin: auto;
-  height: 95px;
-  width: 85px;
-  border-radius: 10px;
-  box-shadow: 5px 10px 18px #888888;
-}
-#GH-Logo {
-  margin: auto;
-  margin-top: -3px;
-  height: 102.5px;
-  width: 100px;
-}
-#resIcon {
-  margin: auto;
-  height: 100px;
-  width: 100px;
-  border-radius: 3px;
-}
-#LI-Logo {
-  margin: auto;
-  height: 100px;
-  width: 100px;
-}
-#topBtnCont {
-  height: 45%;
-  width: 200px;
-  margin: auto;
-  text-align: center;
-  color: black;
-  font-size: 30px;
-}
-#topPointer {
-  display: block;
-  margin: auto;
-  height: 60%;
-  width: 50%;
-}
-#topPointerBtn {
-  z-index: 6;
-  cursor: pointer;
-}
-#topPointerBtn:hover {
-  text-shadow: 0.1vw 0.1vw 0vw white;
-  font-size: 32px;
-}
-#navMenuSM {
-  position: fixed;
-  overflow: none;
-  top: 0;
-  height: 100%;
-  width: 100%;
-  background-color: gray;
-  opacity: 1;
-  display: none;
-  z-index: 100;
-}
-#navSMContent {
-  width: 40%;
-  height: 20%;
-  margin: auto;
-  margin-top: 25%;
-}
-#closeBtn {
-  display: block;
-  width: 20%;
-  height: 10%;
-  margin-left: 80%;
-  background-color: white;
-  color: black;
-  font-size: 5vw;
-  text-decoration: none;
-  text-align: center;
-  line-height: 10vh;
-}
-.navMenuSMBtn {
-  font-size: 5vh;
-  display: block;
-  width: 100%;
-  height: 33%;
-  line-height: 100%;
-}
 @media only screen and (max-width: 1025px) {
-  #logo {
-    width: 80%;
-    font-size: 50px;
-    margin-top: 3vh;
-    line-height: 5vh;
-  }
-  #navMenu {
-    width: 7vw;
-    height: 4vh;
-    right: 10;
-    top: 25;
-    display: initial;
-  }
-  #navMenu:active {
-    transition: 1s;
-    opacity: 0;
-  }
-  #navMenuLG {
-    display: none;
-  }
-  .menuBar {
-    width: 100%;
-    height: 10%;
-    border-radius: 15px;
-  }
-  #bar1 {
-    margin-top: 0vh;
-  }
-  #bar2 {
-    margin-top: 2vh;
-  }
-  #bar3 {
-    margin-top: 4vh;
-  }
-  #resourcesCont {
-    width: 70%;
-  }
-
-  label[for="name"] {
-    height: 10vh;
-    font-size: 7vw;
-  }
-  h1 {
-    font-size: 9vw;
-  }
-  p {
-    font-size: 3vw;
-    width: 90%;
-  }
-  .projectDesc {
-    margin: auto;
-    font-size: 4vw;
-  }
-  .glideCard {
-    height: 65vh;
-  }
-  .projectBtns {
-    font-size: 3vw;
-  }
-  #rLogo {
-    vertical-align: text-bottom;
+  #intro{
+    font-size:3vh;
   }
 }
 @media only screen and (max-width: 600px) {
-  #logo {
-    margin-top: 2.5vh;
-    font-size: 35px;
-  }
-  #navMenu {
-    width: 10vw;
-    height: 4vh;
-    right: 10;
-    top: 25;
-  }
-  .sections {
-    width: 100vw;
-  }
-  #resourcesCont {
-    width: 100%;
-  }
-  #githubBtn {
-    height: 11vh;
-    width: 20vw;
-    border-radius: 50px;
-  }
-  #resumeBtn {
-    height: 11vh;
-    width: 15vw;
-    border-radius: 5px;
-  }
-  #linkedinBtn {
-    background: white;
-    height: 11vh;
-    width: 18vw;
-    border-radius: 10px;
-  }
-  #GH-Logo {
-    margin-top: -5px;
-    margin-left: -8px;
-    height: 105%;
-    width: 90px;
-  }
-  #resIcon {
-    width: 90px;
-    margin-top: -3px;
-    margin-left: -12px;
-  }
-  #LI-Logo {
-    height: 105%;
-    width: 135%;
-  }
-  #submitBtn {
-    font-size: 7vw;
-    line-height: 100%;
-  }
-  h1 {
-    font-size: 12vw;
-  }
-  label[for="name"] {
-    height: 10vh;
-    font-size: 10vw;
-  }
-  p {
-    font-size: 5.5vw;
-  }
-  #glideCardH {
-    font-size: 5vh;
-  }
-  .projectDesc {
-    font-size: 6vw;
-  }
-  .glideCard {
-    height: 55vh;
-  }
-  .projectBtns {
-    font-size: 5vw;
-  }
-  .pbtn {
-    width: 33%;
+  #intro{
+    font-size:2.5vh;
   }
 }
