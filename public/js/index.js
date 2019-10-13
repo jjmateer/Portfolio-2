@@ -11,11 +11,12 @@ $("#contactForm").on("submit", function () {
         message: $("#message")
             .val()
             .trim()
-    }).then(function () {
+    })
+    if ($("#name").val('') != ' ') {
         $("#name").val('')
         $("#email").val('')
         $("#message").val('')
-    });
+    }
 })
 const glideConfig = {
     type: "carousel",
