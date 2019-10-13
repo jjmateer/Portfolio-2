@@ -1,25 +1,16 @@
-$("#topPointerBtn").on('click', function () {
+$("#projectScroll").on('click', function () {
     $('body').animate({
-        scrollTop: $("#topBar").offset().top
+        scrollTop: $("#projectsCont").offset().top
     },
         1000);
 });
-$("#projectScroll, #projectScrollSM").on('click', function () {
-    document.getElementById("navMenuSM").style.display = "none";
-    $('body').animate({
-        scrollTop: $("#projectsHeader").offset().top
-    },
-        1000);
-});
-$("#contactScroll, #contactScrollSM").on('click', function () {
-    document.getElementById("navMenuSM").style.display = "none";
+$("#contactScroll").on('click', function () {
     $('body').animate({
         scrollTop: $("#contactCont").offset().top
     },
         1000);
 });
-$("#resourceScroll, #resourceScrollSM").on('click', function () {
-    document.getElementById("navMenuSM").style.display = "none";
+$("#resourceScroll").on('click', function () {
     $('body').animate({
         scrollTop: $("#resourcesCont").offset().top
     },

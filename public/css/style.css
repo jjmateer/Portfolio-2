@@ -7,7 +7,7 @@
   width: 100%;
   position: fixed;
   height: 10vh;
-  /* background: lightsteelblue; */
+  background: white;
   top:0;
   display:flex;
   z-index:10;
@@ -20,19 +20,24 @@
 }
 #navMenu{
   margin-right:5vw;
-  width:20vw;
+  width:15vw;
   height:10vh;
   display:flex;
 
 }
 .navBtn{
-  width:32.5%;
+  width:20%;
   height:5vh;
-  background-color:lightgray;
   text-align: center;
   line-height: 5vh;
   margin:auto;
   cursor:pointer;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+#githubBtn{
+  border-radius: 50%;
 }
 .section {
   width: 100%;
@@ -59,7 +64,6 @@
 .glide{
   width:100%;
   height:100%;
-  color:white;
 }
 .glideCard{
   height:50vh;
@@ -73,6 +77,7 @@
   font-size:5vh;
   width:100%;
   text-align:center;
+  background:white;
 }
 .projectBtns{
   margin-top:5vh;
@@ -88,6 +93,19 @@
   text-align:center;
   font-size:200%;
   text-decoration: none;
+  color:white;
+  text-shadow: 1px 1px 5px black;
+  cursor: pointer;
+}
+.projectDesc{
+  display:none;
+  display:block;
+  bottom:0;
+  width:100%;
+  height:auto;
+  font-size:3vh;
+  background:white;
+
 }
 #TSNCard {
   background-image: url(../images/TSN.png);
@@ -97,6 +115,34 @@
 }
 #GSCard {
   background-image: url(../images/GS.png);
+}
+#contactform {
+  width:100%;
+  height:100%;
+}
+.contactlabels {
+  display:block;
+  width:100%;
+  height:5vh;
+  font-size:5vh;
+  line-height:100%;
+  text-align: center;
+  margin-bottom:3vh;
+}
+.formInputs{
+  display:block;
+  width:80%;
+  height:10%;
+  margin:auto;
+  margin-bottom:3vh;
+}
+#submitBtn {
+  display:block;
+  width:25%;
+  margin:auto;
+  height:5vh;
+  margin-top: 5vh;
+  font-size:3vh;
 }
 @media only screen and (max-width: 1025px) {
   #intro{
