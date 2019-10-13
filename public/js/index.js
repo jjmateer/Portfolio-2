@@ -1,30 +1,3 @@
-$("#projectScroll").on('click', function () {
-    $('body').animate({
-        scrollTop: $("#projectsCont").offset().top
-    },
-        1000);
-});
-$("#contactScroll").on('click', function () {
-    $('body').animate({
-        scrollTop: $("#contactCont").offset().top
-    },
-        1000);
-});
-$("#resourceScroll").on('click', function () {
-    $('body').animate({
-        scrollTop: $("#resourcesCont").offset().top
-    },
-        1000);
-});
-$("#TSNInfo").on("click", function () {
-    $("#TSNI.projectDesc").show();
-})
-$("#EDBInfo").on("click", function () {
-    $("#EDBI.projectDesc").show();
-})
-$("#GSInfo").on("click", function () {
-    $("#GSI.projectDesc").show();
-})
 $("#contactForm").on("submit", function () {
     event.preventDefault();
     $.post("/send", {
