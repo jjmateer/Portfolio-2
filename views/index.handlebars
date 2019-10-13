@@ -25,8 +25,7 @@
                             account/login, make posts which display on the dashboard, and chat in real time. I
                             worked on the live chat room, created sequelize models, pulled data from the
                             database for dynamic rendering, and converted the initial front end html into
-                            handlebars
-                            templates.
+                            handlebars templates.
 
                         </div>
                     </div>
@@ -74,12 +73,11 @@
     <form id="contactForm" method="POST" action="send">
         <h1 class="mainH">Contact</h1>
         <span class="contactlabels">Name</span>
-        <input class="formInputs" placeholder="Ex: John Johnson" id="name" />
+        <input required class="formInputs" placeholder="Ex: John Johnson" id="name" />
         <span class="contactlabels">Email</span>
-        <input class="formInputs" placeholder="Ex: name@email.com" id="email" />
+        <input required class="formInputs" placeholder="Ex: name@email.com" id="email" />
         <span class="contactlabels">Message</span>
-        <textarea class="formInputs" placeholder="Enter message here..." id="message"></textarea>
+        <textarea required class="formInputs" placeholder="Enter message here..." id="message"></textarea>
         <button id="submitBtn" type="submit">Send</button>
     </form>
 </div>
-{{> footer/footer-block}}

@@ -28,9 +28,7 @@ exports.send = async function (req, res) {
         html: output
     }
     transporter.sendMail(info, (err, info) => {
-        console.log(error || response); 
-        // console.log('Preview URL: %s', nodemailer.getTestMessageUrl(info));
-        res.render("index", { msg: "Message" })
+        console.log(err || response);
         console.log(output)
     })
 }
