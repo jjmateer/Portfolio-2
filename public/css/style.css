@@ -21,16 +21,16 @@ html {
 		background-position: 0% 50%;
 	}
 }
-::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+::placeholder { 
   color: black;
-  opacity: 1; /* Firefox */
+  opacity: 1; 
 }
 
-:-ms-input-placeholder { /* Internet Explorer 10-11 */
+:-ms-input-placeholder { 
   color: black;
 }
 
-::-ms-input-placeholder { /* Microsoft Edge */
+::-ms-input-placeholder { 
   color: black;
 }
 button:hover, a:hover {
@@ -172,6 +172,9 @@ button:hover, a:hover {
 }
 #GSCard {
   background-image: url(../images/GS.png);
+}
+#NYTSCard {
+  background-image: url(../images/NYTS.png);
 }
 #contactform {
   width:100%;
