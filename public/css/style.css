@@ -102,6 +102,20 @@ a:hover {
   margin: auto;
   font-family: "Merienda One", cursive;
 }
+#stackIcons {
+  width:99vw;
+  height:20vh;
+  margin:auto;
+  margin-top:10vh;
+  display: flex;
+}
+.sIcon {
+  display: block;
+  max-width:5vw;
+  height:auto;
+  margin:auto;
+  max-height:100%;
+}
 .glide {
   width: 100%;
   height: 100%;
