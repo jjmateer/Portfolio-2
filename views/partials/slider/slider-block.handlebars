@@ -10,11 +10,10 @@
 
                     </div>
                     <div class="projectDesc" id="TSNI">Node-Express application where users can create an
-                        account/login, make posts which display on the dashboard, and chat in real time. I
-                        worked on the live chat room, created sequelize models, pulled data from the
-                        database for dynamic rendering, and converted the initial front end html into
-                        handlebars templates.
-
+                        account/login, make posts which display on the dashboard, and chat room. Uses
+                        MongoDB to store chatroom messages and MySQL to store user info & posts. Features
+                        hashed passwords with bcrypt, real time live chat using socket.io, and persistent
+                        login using express-session.
                     </div>
                     <img class="pImg" src="../images/TSN.png">
                 </div>
@@ -29,8 +28,9 @@
                     </div>
                     <div class="projectDesc" id="NYTSI">
                         Node-Express application which uses cheerio to scrape the world news section of the New York
-                        Times website. Features MongoDB to store all articles and notes. Users can save articles
-                        of their choice, leave notes for them, and retreive previously deleted notes.
+                        Times website. Stores all of the articles & notes on MongoDB and uses handlebars to dynamically
+                        render the information. Users can save articles of their choice, leave notes for them, and
+                        retrieve previously deleted notes.
                     </div>
                     <img class="pImg" src="../images/NYTS.png">
                 </div>
@@ -43,7 +43,7 @@
                         <a class="pbtn" href="https://eat-da-burger22.herokuapp.com/">Demo</a>
 
                     </div>
-                    <div class="projectDesc" id="EDBI">Node-express application which allows users to post
+                    <div class="projectDesc" id="EDBI">Node-Express application which allows users to post
                         burgers and devour them. This app uses a mySQL database with an ORM to store
                         burgers and dynamically render them with handlebars.
                     </div>
@@ -57,9 +57,9 @@
                         <a class="pbtn" href="https://github.com/jjmateer/Giphy-Search">Code</a>
                         <a class="pbtn" href="https://jjmateer.github.io/Giphy-Search/">Demo</a>
                     </div>
-                    <div class="projectDesc" id="GSI">Application which allows users to search for gifs and
-                        play/stop them. This app uses jQuery to render a button with the user's search,
-                        uses that term to search the Giphy API and renders the first 25 results to the page.
+                    <div class="projectDesc" id="GSI"> This application uses jQuery to render a button with the user's
+                        search. When clicked, an AJAX get request is sent to the Giphy API and renders the first 25
+                        results to the page.
 
                     </div>
                     <img class="pImg" src="../images/GS.png">
