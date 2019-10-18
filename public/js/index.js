@@ -32,3 +32,7 @@ const glideConfig = {
 };
 new Glide('.glide', glideConfig).mount()
 AOS.init();
+$("#logo").on("click", function () {
+    $('html, body').animate({ scrollTop: 0 }, 'slow', function () {
+    });
+})
