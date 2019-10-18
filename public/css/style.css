@@ -56,11 +56,6 @@ a:hover {
   cursor:pointer;
   /* text-shadow: 1px 1px 5px black; */
 }
-#logo:hover {
-  transition:0.2s;
-  color:white;
-    text-shadow: 1px 1px 10px black;
-}
 #navMenu {
   margin-right: 5vw;
   width: 15vw;
@@ -112,9 +107,8 @@ a:hover {
   height: 100%;
 }
 .glideCard {
-  /* height: auto; */
   height:auto;
-  max-height:75vh;
+  max-height:80vh;
   background:white;
   background-position: center;
   background-size: cover;
@@ -176,6 +170,8 @@ a:hover {
   width:auto;
 max-width:100%;
   margin:auto;
+  border-bottom:solid black;
+  border-top:solid black;
 }
 #contactform {
   width: 100%;
