@@ -11,7 +11,7 @@
                     </div>
                     <div class="projectDesc" id="TSNI">Node-Express application where users can create an
                         account/login, make posts which display on the dashboard, and chat with others. Uses
-                        MongoDB to store chatroom messages and MySQL to store user info & posts. Features
+                        MongoDB to store chatroom messages and MySQL/Sequelize to store user info & posts. Features
                         hashed passwords with bcrypt, real time live chat using socket.io, and persistent
                         login using express-session.
                     </div>
@@ -36,21 +36,6 @@
                 </div>
             </li>
             <li class="glide__slide">
-                <div class="glideCard">
-                    <h class="glideCardH">Eat Da Burger</h>
-                    <div class="projectBtns">
-                        <a class="pbtn" href="https://github.com/jjmateer/Burger">Code</a>
-                        <a class="pbtn" href="https://eat-da-burger22.herokuapp.com/">Demo</a>
-
-                    </div>
-                    <div class="projectDesc" id="EDBI">Node-Express application which allows users to post
-                        burgers and devour them. This app uses a mySQL database with an ORM to store
-                        burgers and dynamically render them with handlebars.
-                    </div>
-                    <img class="pImg" src="../images/EDB.png">
-                </div>
-            </li>
-            <li class="glide__slide">
                 <div class="glideCard" id="TSNCard">
                     <h class="glideCardH">Your New Friend</h>
                     <div class="projectBtns">
@@ -61,10 +46,25 @@
                     <div class="projectDesc" id="TSNI">This application contains a survey in which users
                         will agree with certain topics from 1-5. There is a list of people in JSON
                         format with an array of scores. The absolute value of the user's score will
-                        be compared with everyone in the list and the one with the least difference
-                        is your new friend.
+                        be compared with everyone in the list and the person with the least different
+                        score is your new friend.
                     </div>
                     <img class="pImg" src="../images/YNF.png">
+                </div>
+            </li>
+            <li class="glide__slide">
+                <div class="glideCard">
+                    <h class="glideCardH">Eat Da Burger</h>
+                    <div class="projectBtns">
+                        <a class="pbtn" href="https://github.com/jjmateer/Burger">Code</a>
+                        <a class="pbtn" href="https://eat-da-burger22.herokuapp.com/">Demo</a>
+
+                    </div>
+                    <div class="projectDesc" id="EDBI">Simple application which allows users to post
+                        burgers and devour them. This app uses a mySQL database with an ORM to store
+                        burgers and dynamically render them to the page with handlebars.
+                    </div>
+                    <img class="pImg" src="../images/EDB.png">
                 </div>
             </li>
             <li class="glide__slide">
